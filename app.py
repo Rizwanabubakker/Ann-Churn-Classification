@@ -57,6 +57,6 @@ prediction_proba=prediction[0][0]
 st.write(f'Churn Probability: {prediction_proba:.2f}')
 
 if prediction_proba > 0.5:
-    st.error('The customer is likely to Churn.')
+    st.success('The customer is likely to Churn.')
 else:
-    st.success('The customer is not likely to Churn.')
+    st.error('The customer is not likely to Churn.')
